@@ -77,6 +77,11 @@ subs :
           dialog_height : 350
           flags: [ SIGTERM, kill_children ]
 
+      - name : FLIR
+        desc : FLIR Spinnaker general driver
+        probe:
+        run  : rosrun flir spinnaker
+
   - name : GNSS
     desc : GNSS desc sample
     subs :
